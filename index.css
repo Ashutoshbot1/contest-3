@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+li{
+    list-style: none;
+    /* margin-left: 0px; */
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    color:white;
+}
+
+
+////////// container ////////////
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* //////////header///////////// */
+
+.header{
+    /* border: 5px solid ; */
+    /* height: 120vh; */
+}
+
+
+/* ///////////////// navbar///////////// */
+
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+    padding: 1.5em 10em;
+    display: flex;
+    background-color:black;
+    color: white;
+}
+
+/* ////////////////// nav items ////////////////// */
+
+
+.navbar .nav-items{
+
+    /* border: 2px solid blue; */
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    /* width: 40%; */
+}
+
+/* //////////////// logo ////////////////////// */
+
+.nav-items .logo{
+    font-size:2.5rem;
+}
+
+/* ///////////////////// ul ////////////////// */
+
+.navbar ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+}
+
+/* ///////////////// LI ///////////////// */
+
+li{
+    margin: 0 1rem;
+    
+}
+
+
+
+/* ######################### */
+
+
+
+/* /////////////// search //////////////// */
+
+.search{
+    /* border: 2px solid; */
+    /* width:100%; */
+    font-size:1.5rem;
+    display: flex;
+    justify-content:space-between;
+
+    /* width: 50%; */
+}
+
+.nav-items .search input{
+    height: 100%;
+    /* background: black; */
+}
+
+
+
+
+.search .src-btn{
+    height: 100%;
+    width: 30%;
+    font-size: 1.5rem;
+
+    background-color: black;
+    color: white;
+    border: 2px solid;
+    padding: 0.5em;
+    margin-left: 0.5rem;
+}
+
+::placeholder{
+    font-size: 1.5rem;
+    
+}
+
+.carousel-item img{
+    /* height: 110vh; */
+    
+
+    /* font-size: 1.5rem; */
+}
+
+.carousel slide{
+    width: 100%;
+}
+
+
+.carousel-item{
+    font-size: 1.8rem;
+}
+
+.carousel-item h2{
+    font-size: 2.8rem;
+}
+
+
+
+
+
+.carousel-item .carousel-btn{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: .8rem 1.4rem;
+    border-radius: 10px;
+}
+
+
+
+/* ///////////////// flex-img /////////////// */
+
+.images{
+    /* border:2px solid; */
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+
+    
+}
+
+
+.image{
+    /* border: 2px solid blue; */
+    width: 400px;
+    height: 200px;
+    /* padding: 0.5rem; */
+    margin-bottom: 2rem;
+
+
+    
+}
+
+.image .dimension{
+    font-size:3rem;
+    color:grey;
+    height: 90%;
+    display: flex;
+    background-color: lightgrey;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.image .desc{
+    font-size:1.5rem;
+    text-align: center;
+}
+
+
+/* //////////////gallery /////////////// */
+
+.gallery{
+   /* border:2px solid blue;  */
+   margin-top:6rem;
+   display:grid;
+   grid-template-columns:1fr 2fr;
+   height: 300px;
+   gap:1rem;
+   
+}
+
+
+.gallery .image{
+    width: 100%;
+    height: 100%;
+    display:grid;
+    /* border:2px solid green; */
+    background-color: lightgrey;
+    font-size: 5rem;
+    color: grey;
+    place-content: center center;
+}
+
+
+/* /////////////////////// main foot////////////////// */
+
+
+.foot{
+    /* position: relative; */
+    /* border: 8px solid green; */
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.foot .image-desc{
+    width: 400px;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.image-desc .image{
+    background-color: lightgrey;
+    color: grey;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image-desc .card-details{
+    padding: 1rem;
+    font-size: 1.5rem;
+    /* border: 2px solid blue; */
+}
+
+
+.image-desc .image-desc-btn{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: .8rem 1.4rem;
+    border-radius: 10px;
+}
+
+.image-desc .image,
+.image-desc .card-details{
+    width: 100%;
+}
+
+
+/* ////////////////FOOTER///////////// */
+
+.footer{
+    /* border:2px solid; */
+    margin-top: 8rem;
+    font-size: 1.5rem;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    flex-flow:row wrap ;
+    justify-content: space-between;
+}
+
+.footer-div{
+    /* border: 2px solid; */
+    margin-bottom: 2rem;
+    width: 400px;
+
+}
+
+
+.footer .copywrite{
+    display: flex;
+
+
+    justify-content: space-between;
+}
+
+.copywrite p{
+    font-weight: bold;
+}
+
+
+.footer-btn{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: .8rem 1.4rem;
+    border-radius: 10px;
+}
+
+
+
+
+
